@@ -5,9 +5,6 @@ import { getFilter } from 'redux/contactsSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
 const ContactList = () => {
-  // const contacts = useSelector(state => state.items);
-  // const filter = useSelector(state => state.filter);
-
   const contacts = useSelector(getContacts);
   const filter = useSelector(getFilter);
   const dispatch = useDispatch();

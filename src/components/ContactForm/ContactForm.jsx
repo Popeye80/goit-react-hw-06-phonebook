@@ -20,20 +20,18 @@ function ContactForm() {
         setNumber(event.currentTarget.value);
         break;
       default:
-        throw new Error('Worng state type!');
+        throw new Error('Wrong state type!');
     }
   };
 
   const handleSubmit = e => {
     e.preventDefault();
 
-    // For deal array of contacts in lower case
     const allContacts = contacts.reduce((acc, contact) => {
       acc.push(contact.name.toLocaleLowerCase());
       return acc;
     }, []);
 
-    // Check if the contact is already in the contact list
     if (allContacts.includes(name.toLocaleLowerCase())) {
       alert(`${name} already in contacts.`);
       return;

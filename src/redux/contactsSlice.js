@@ -35,8 +35,5 @@ export const contactsSlice = createSlice({
 
 export const { addContact, deleteContact, updateFilter } =
   contactsSlice.actions;
-// Что бы при изменении внешенго вида стетай или свойст не приходилось руками менять в каждом файле
 export const getContacts = state => state.contacts.items;
 export const getFilter = state => state.contacts.filter;
-
-// contactsSlice.actions и contactsSlice.reducer возвращает сам медот createSlice

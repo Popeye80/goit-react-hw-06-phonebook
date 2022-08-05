@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { updateFilter, getFilter } from 'redux/contactsSlice';
 
 const Filter = () => {
-  // const filter = useSelector(state => state.filter);
   const filter = useSelector(getFilter);
   const dispatch = useDispatch();
   return (

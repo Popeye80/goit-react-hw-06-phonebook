@@ -7,7 +7,6 @@ import { getContacts } from 'redux/contactsSlice';
 
 export function App() {
   const contacts = useSelector(getContacts);
-  console.log(contacts);
 
   return (
     <div className="wrapper">

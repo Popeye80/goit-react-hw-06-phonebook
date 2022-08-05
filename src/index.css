@@ -1,4 +1,4 @@
-@import-normalize; /* bring in normalize.css styles */
+@import-normalize;
 
 body {
   margin: 0;
@@ -7,9 +7,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(211, 235, 248);
-
-  color: #000;
+  background-color: white;
+  color: black;
 }
 
 button {
@@ -24,44 +23,42 @@ code {
 
 .wrapper {
   margin: 30px 10px;
-
-  border: 1px solid #000;
+  border: 1px solid black;
   border-radius: 14px;
   max-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  box-shadow: 0.5rem 0.5rem 2rem #464545, -0.5rem -0.5rem 2rem #acabab;
+  box-shadow: 0.25rem 0.25rem 1rem yellow, -0.25rem -0.25rem 1rem yellow;
 }
 
-@media screen and (min-width: 510px) {
+@media screen and (min-width: 480px) {
   .wrapper {
     margin: 30px auto;
   }
 }
 
 .header-section {
-  background-color: #445daf;
-  color: #fff;
+  background-color: blue;
+  color: white;
   width: 100%;
   text-align: center;
 }
 
 .main-section {
   padding-top: 30px;
-  background-color: #c5d3fc;
+  background-color: lightblue;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.contacts-secton {
+.contacts-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   margin: 20px auto 50px;
 }
 

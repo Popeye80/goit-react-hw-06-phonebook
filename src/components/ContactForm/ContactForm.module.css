@@ -1,5 +1,5 @@
 .form {
-  border: 1px solid #000;
+  border: 1px solid black;
   border-radius: 10px;
   margin: 0 20px;
   padding: 30px;
@@ -37,14 +37,11 @@
   width: 100%;
   margin-top: 30px;
   border-radius: 6px;
-  border: 1px rgb(139, 139, 139) solid;
-
+  border: 1px grey solid;
   padding: 10px;
-
-  background-image: linear-gradient(#323ff1, #1f2df8);
+  background-image: linear-gradient(blue, blue);
   box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.3);
-
-  color: #fff;
+  color: white;
   font-size: 16px;
   font-weight: 700;
   opacity: 1;
@@ -60,11 +57,7 @@
   outline: none;
 }
 
-/* .addBtn:hover {
-  opacity: 1.5;
-} */
-
-@media screen and (min-width: 510px) {
+@media screen and (min-width: 480px) {
   .form {
     width: 350px;
     margin: 0;
